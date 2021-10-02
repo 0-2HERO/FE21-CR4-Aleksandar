@@ -1,0 +1,27 @@
+body {
+    background-image: url(../Images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpeg);
+    margin: 0vw;
+
+}
+
+#homebtn {
+    width: 2rem;
+    height: 2rem;
+}
+
+.card {
+    background-color: rgba(219, 41, 35, 0.178);
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+}
+
+.footerlogo {
+    width: 20rem;
+}
+
+.fnavbar {
+    margin-top: 10rem;
+}
