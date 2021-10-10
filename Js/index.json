@@ -1,0 +1,39 @@
+var movies = `[
+    {
+        "title": "Wall-e",
+        "description": "Wall-e meets another robot and falls in love with her. Together, they set out on a journey.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/51iA8isg59L.jpg"
+    },
+    {
+        "title": "The wolf of Wall street",
+        "description": "Jordan Belfort takes a hit after a Wall Street crash. He teams up with Donnie.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/A1FROm2iTyL._SL1500_.jpg"
+    },
+    {
+        "title": "Willy Wonka",
+        "description": "A factory owner gives 5 children a chance to win a lifetime supply of sweets. Charlie.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/81tCWrSIf1S._SL1500_.jpg"
+    },
+    {
+        "title": "Wonder Woman",
+        "description": " Diana leaves her home for the first time. Fighting alongside men in a war to end all wars.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/91s1WRgDW1L._SL1500_.jpg"
+    },
+    {
+        "title": "Reservoir dogs",
+        "description": "Six criminals, hired to steal diamonds, do not know each other's true identity. Attempting the heist.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/513sr2niA+L.jpg"
+    },
+    {
+        "title": "Rounders",
+        "description": "Mike McDermott, a reformed gambler, turns back to his old life, Worm, asks him to help pay.",
+        "likes": 0,
+        "img": "https://m.media-amazon.com/images/I/51qDn6WRm0L.jpg"
+    }
+]` 
+
