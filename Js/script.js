@@ -1,14 +1,15 @@
 
 
-var movies2 = JSON.parse(movies);
-console.table(movies2);
+let x = JSON.parse(movies);
+console.table(typeof (x));
 
-var button = 0;
-for (let val of movies2) {
+const output = document.getElementById("moviesect")
+
+for (val of x) {
 
 
 
-    document.getElementById("moviesect").innerHTML += `
+  output.innerHTML += `
     <div class="card m-1 mt-5 mb-5 text-light" style="max-width: 400px;">
     <div class="row g-0">
       <div class="col-md-4">
@@ -18,8 +19,8 @@ for (let val of movies2) {
         <div class="card-body">
           <h5 class="card-title">${val.title}</h5>
           <p class="card-text">${val.description}</p>
-          <button class="btn-success rounded border-0" onclick="btnlikes();">Like</button>
-        <input class="text-white" type="text" id="output" value="${val.likes}"> </input>
+          <button class ="btn btn-primary myBtn" id="btn"><img src="../Images/like.png" style="width: 1rem; height:1rem; alt=""> Like</button> 
+     <span class="ms-4 likes " id="likes">  ${val.likes} likes </span>
 
 
     
@@ -30,33 +31,20 @@ for (let val of movies2) {
   </div>
      `
 
+};
 
+var button = document.getElementsByClassName("myBtn");
+var likes = document.getElementsByClassName("likes");
+var count = likes.innerHTML;
 
-    var i = 0;
-    function btnlikes() {
-        i++;
-        document.getElementById("output").value = i;
-    }
-
-
-
-
+for (let i in button) {
+  button[i].addEventListener("click", function () {
+    x[i].likes++;
+    likes[i].innerHTML = `${x[i].likes}`
+  })
 }
 
 
 
 
-
-
-
-/* couldnt solve this  */
-
-// var x = document.getElementsByid("likes");
-// var x = document.getElementById("btns").value;
-// var button = document.getElementsByClassName("likes");
-// let count = x.innerHTML;
-// button.addEventListener("click", function () {
-//     count++;
-//     likes.innerHTML = count;
-// })
 
